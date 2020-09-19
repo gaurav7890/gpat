@@ -7,10 +7,13 @@ export default class Header extends React.Component {
   render() {
     return (
       <div className="header">
-        <FontAwesomeIcon icon="bars" className="hamburger-menu"/>
-        <div className="header-nav">About Me</div>
-        <div className="header-nav">Experience</div>
-        <div className="header-nav">Contact Me</div>
+        <FontAwesomeIcon icon="bars" className="hamburger-menu">
+          hihihihih
+          </FontAwesomeIcon>
+        <FontAwesomeIcon icon="home" className="header-nav home"/>
+        <div className="header-nav about-me">About Me</div>
+        <div className="header-nav experience">Experience</div>
+        <div className="header-nav contact-me">Contact Me</div>
       </div>
     );
   }
