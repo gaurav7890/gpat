@@ -1,0 +1,75 @@
+// Pretty simple for now. Write the desktop styles that we've already been writing.
+//
+// If you need something to be different when you're tablet-or-smaller:
+//    @include at-tablet {}
+// If you need something to be different when you're phone-or-smaller:
+//    @include at-phone {}
+
+$size-phone: 550px;
+$size-tablet: 1024px;
+
+@mixin at-tablet {
+  @at-root {
+    @media only screen and (max-width: $size-tablet) {
+      & {
+        @content;
+      }
+    }
+  }
+}
+
+@mixin above-tablet {
+  @at-root {
+    @media only screen and (min-width: $size-tablet) {
+      & {
+        @content;
+      }
+    }
+  }
+}
+
+@mixin at-phone {
+  @at-root {
+    @media only screen and (max-width: $size-phone) {
+      & {
+        @content;
+      }
+    }
+  }
+}
+
+@mixin above-phone {
+  @at-root {
+    @media only screen and (min-width: $size-phone) {
+      & {
+        @content;
+      }
+    }
+  }
+}
+
+.hide-at-phone {
+  @include at-phone {
+    display: none;
+  }
+}
+
+.hide-above-phone {
+  display: none;
+  @include at-phone {
+    display: unset;
+  }
+}
+
+.hide-at-tablet {
+  @include at-tablet {
+    display: none;
+  }
+}
+
+.hide-above-tablet {
+  display: none;
+  @include at-tablet {
+    display: unset;
+  }
+}

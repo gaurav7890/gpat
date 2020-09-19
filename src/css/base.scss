@@ -1,0 +1,48 @@
+@import './breakpoints';
+
+.header, .footer {
+  background-color: #282c34;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: white;
+  height: 60px;
+  // margin-bottom: 30px;
+  .header-nav {
+    @include at-phone {
+      display: none;
+    }
+    font-size: 1.15em;
+    margin: 0 20px;
+    &:last-of-type {
+      margin-right: 40px;
+    }
+  }
+}
+
+.header {
+  @include at-phone {
+    justify-content: flex-start;
+  }
+  justify-content: flex-end;
+  .hamburger-menu {
+    padding-left: 10px;
+    @include above-phone {
+      display: none;
+    }
+  }
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  justify-content: center;
+  .copyright-icon {
+    margin-right: 5px;
+  }
+}
+
+.body {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
