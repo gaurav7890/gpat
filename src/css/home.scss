@@ -9,7 +9,8 @@
 .welcome-page-background {
   background-image: url(../images/home-background.png);
   background-repeat: no-repeat;
-  filter: blur(1px) contrast(0.8);
+  background-size: cover;
+  filter: blur(3px) contrast(0.8);
 }
 
 .welcome-page {

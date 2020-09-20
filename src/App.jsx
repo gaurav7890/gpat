@@ -21,6 +21,9 @@ class App extends Component {
           {/* Add routes */}
           <div className="main-content">
             <Switch>
+              <Route exact path="/gpat">
+                <Home />
+              </Route>
               <Route exact path="/">
                 <Home />
               </Route>
