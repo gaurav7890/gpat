@@ -1,0 +1,39 @@
+@import './breakpoints';
+
+.fourOFour-container {
+  @include at-phone {
+    flex-direction: column-reverse;
+  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  .fourOFour-background-gif {
+    background-image: url(../images/404-dog.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 220px;
+    width: 300px;
+  }
+  .fourOFour-text {
+    @include at-phone {
+      font-size: 1.5em;
+      
+    }
+    @include above-phone {
+      font-size: 2em;
+      margin-right: 30px;
+    }
+    text-align: center;
+    svg {
+      margin-left: 15px;
+      color: #00aabb;
+    }
+    .fourOFour-error-number {
+      font-size: 4em;
+    }
+  }
+}

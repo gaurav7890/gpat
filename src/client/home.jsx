@@ -12,7 +12,7 @@ export default class Home extends React.Component {
               Gaurav Patnashetty.
             </div>
             <div className="welcome-one-liner">
-              Not your average Fullstack Developer.
+              I'm a Fullstack Software Developer.
             </div>
             <div className="learn-more-button">
               <Link to="/about" className="btn btn-primary">Learn More</Link>

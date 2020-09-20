@@ -5,6 +5,7 @@ import Footer from './client/footer';
 import About from './client/about';
 import Contact from './client/contact';
 import Experience from './client/experience';
+import FourOFour from './client/fourOFour';
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -21,6 +22,7 @@ class App extends Component {
           {/* Add routes */}
           <div className="main-content">
             <Switch>
+              {/* TODO: remove this once deployed */}
               <Route exact path="/gpat">
                 <Home />
               </Route>
@@ -36,6 +38,7 @@ class App extends Component {
               <Route path="/contact">
                 <Contact />
               </Route>
+              <FourOFour />
             </Switch>
           </div>
           <Footer />
