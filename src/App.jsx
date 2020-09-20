@@ -18,24 +18,25 @@ class App extends Component {
       <Router>
         <div className="App">
           <Header />
+          {/* Add routes */}
+          <div className="main-content">
+            <Switch>
+              <Route exact path="/">
+                <Home />
+              </Route>
+              <Route path="/about">
+                <About />
+              </Route>
+              <Route path="/experience">
+                <Experience />
+              </Route>
+              <Route path="/contact">
+                <Contact />
+              </Route>
+            </Switch>
+          </div>
           <Footer />
         </div>
-
-        {/* Add routes */}
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/experience">
-            <Experience />
-          </Route>
-          <Route path="/contact">
-            <Contact />
-          </Route>
-        </Switch>
       </Router>
     );
   }

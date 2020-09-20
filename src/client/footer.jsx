@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/base.scss';
+import '../css/headerAndFooter.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '@fortawesome/fontawesome-free-regular';
 

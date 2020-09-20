@@ -1,0 +1,68 @@
+@import './breakpoints';
+@import './base';
+
+.header, .footer {
+  background-color: $base-background-2;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: white;
+  height: $header-height;
+}
+
+.header {
+  @include at-phone {
+    display: flex;
+    justify-content: flex-start;
+  }
+  @include above-phone {
+    justify-content: flex-end;
+  }
+  .header-section.header-section-closed-mobile {
+    @include at-phone {
+      display: none;
+    }
+  }
+  .header-section {
+    @include at-phone {
+      display: block;
+      position: absolute;
+      top: $header-height;
+      background: $base-background-2;
+      width: 200px;
+    }
+    display: flex;
+    .header-nav {
+      @include at-phone {
+        min-height: 50px;
+        border-bottom: 1px solid white;
+        display: flex;
+        align-items: center;
+        &.contact-me {
+          border: none;
+        }
+      }
+      font-size: 1.15em;
+      margin: 0 20px;
+      cursor: pointer;
+      &:last-child {
+        margin-right: 40px;
+      }
+    }
+  }
+  .hamburger-menu {
+    @include above-phone {
+      display: none;
+    }
+    padding-left: 10px;
+    &:hover {
+      color: #00aabb;
+    }
+  }
+}
+.footer {
+  justify-content: center;
+  .copyright-icon {
+    margin-right: 5px;
+  }
+}
