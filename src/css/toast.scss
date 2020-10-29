@@ -1,0 +1,80 @@
+@import './base.scss';
+
+.notification-container {
+  font-size: 14px;
+  box-sizing: border-box;
+  position: fixed;
+  &.top-right {
+    top: 15px;
+    right: 15px;
+    transition: transform .6s ease-in-out;
+    animation: toast-in-right .7s;
+  }
+  .success {
+    background-color: $color-success;
+  }
+  .error {
+    background-color: $color-error;
+  }
+  .notification {
+    transition: 0.3s ease;
+    position: relative;
+    margin-bottom: 15px;
+    max-height: 500px;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 0 10px #999;
+    opacity: 0.9;
+    &:hover {
+      box-shadow: 0 0 12px #fff;
+      opacity: 1;
+    }
+  }
+  .notification-title {
+    font-weight: 700;
+    font-size: 16px;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 6px;
+    width: 300px;
+    height: 18px;
+  }
+  .notification-message {
+    margin: 0;
+    text-align: left;
+    margin-left: -1px;
+  }
+  .toast {
+    width: 365px;
+    color: #fff;
+    padding: 20px 15px 10px 10px;
+  }
+  .close-button {
+    position: relative;
+    right: -0.7em;
+    top: -0.7em;
+    float: right;
+    color: #fff;
+    outline: none;
+    border: none;
+    text-shadow: 0 1px 0 #fff;
+    opacity: 0.8;
+    font-size: 1em;
+    cursor: pointer;
+    background: none;
+  }
+  .toast-icon svg {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    width: 30px !important;
+    height: 50px;
+  }
+  @keyframes toast-in-right {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+}

@@ -49,8 +49,8 @@ export default class Header extends React.Component {
           <Link to="/about" onClick={() => this.handleMobileMenuClick()}>
             <div className="header-nav about-me">About Me</div>
           </Link>
-          <Link to="/experience" onClick={() => this.handleMobileMenuClick()}>
-            <div className="header-nav experience">Experience</div>
+          <Link to="/experiences" onClick={() => this.handleMobileMenuClick()}>
+            <div className="header-nav experience">Experiences</div>
           </Link>
           <Link to="/contact" onClick={() => this.handleMobileMenuClick()}>
             <div className="header-nav contact-me">Contact Me</div>

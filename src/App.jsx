@@ -4,7 +4,7 @@ import Home from './client/home';
 import Footer from './client/footer';
 import About from './client/about';
 import Contact from './client/contact';
-import Experience from './client/experience';
+import Experience from './client/experiences';
 import FourOFour from './client/fourOFour';
 import './App.css';
 import {
@@ -32,7 +32,7 @@ class App extends Component {
               <Route path="/about">
                 <About />
               </Route>
-              <Route path="/experience">
+              <Route path="/experiences">
                 <Experience />
               </Route>
               <Route path="/contact">
