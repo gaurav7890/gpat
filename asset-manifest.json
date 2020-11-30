@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/gpat/static/css/main.2e5d32f8.chunk.css",
+    "main.js": "/gpat/static/js/main.e86d4ecf.chunk.js",
+    "main.js.map": "/gpat/static/js/main.e86d4ecf.chunk.js.map",
+    "runtime-main.js": "/gpat/static/js/runtime-main.77181aa1.js",
+    "runtime-main.js.map": "/gpat/static/js/runtime-main.77181aa1.js.map",
+    "static/js/2.6505dfb5.chunk.js": "/gpat/static/js/2.6505dfb5.chunk.js",
+    "static/js/2.6505dfb5.chunk.js.map": "/gpat/static/js/2.6505dfb5.chunk.js.map",
+    "index.html": "/gpat/index.html",
+    "precache-manifest.0086bb60d338da752727ab495f433d26.js": "/gpat/precache-manifest.0086bb60d338da752727ab495f433d26.js",
+    "service-worker.js": "/gpat/service-worker.js",
+    "static/css/main.2e5d32f8.chunk.css.map": "/gpat/static/css/main.2e5d32f8.chunk.css.map",
+    "static/js/2.6505dfb5.chunk.js.LICENSE.txt": "/gpat/static/js/2.6505dfb5.chunk.js.LICENSE.txt",
+    "static/media/fourOFour.scss": "/gpat/static/media/404-dog.ffebd71e.gif",
+    "static/media/home.scss": "/gpat/static/media/home-background.4372954b.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.77181aa1.js",
+    "static/js/2.6505dfb5.chunk.js",
+    "static/css/main.2e5d32f8.chunk.css",
+    "static/js/main.e86d4ecf.chunk.js"
+  ]
+}
